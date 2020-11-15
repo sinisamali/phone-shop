@@ -1,0 +1,1055 @@
+@import url("https://css.gg/css");
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  padding-top: 100px;
+}
+#header {
+  height: auto;
+  position: fixed;
+  width: 100%;
+  background-color: white;
+  top: 0;
+  left: 0;
+  z-index: 20;
+}
+#slider-main {
+  width: 100%;
+  margin-top: 5rem;
+  height: 500px;
+}
+img.sakri {
+  visibility: hidden;
+}
+img.prikazi {
+  visibility: visible;
+}
+#divLog {
+  background-color: gray;
+  text-align: end;
+}
+#divLog > a {
+  color: white;
+  display: inline-block;
+  padding: 0.5rem;
+}
+a {
+  text-decoration: none;
+}
+.nav-link:hover {
+  color: black;
+  cursor: pointer;
+  transition: transform 0s, filter 2s ease-in-out;
+  transform: scale(1.2);
+  -webkit-filter: drop-shadow(5px 5px 5px #222);
+  filter: drop-shadow(5px 5px 5px #222);
+}
+#header-top {
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 1px 1px 1px gray;
+}
+nav {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+#logo-nav {
+  width: 5rem;
+  height: 100%;
+}
+nav > ul {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+}
+li {
+  margin-right: 2rem;
+  list-style-type: none;
+}
+li > a {
+  color: gray;
+}
+section {
+  width: 80%;
+  margin: 20px auto;
+}
+section > h2 {
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  font-size: 1.8rem;
+}
+section > h2:after {
+  display: block;
+  content: "";
+  width: 10rem;
+  height: 3px;
+  background-color: orangered;
+  margin: 0 auto;
+  margin-top: 15px;
+}
+#aboutMain {
+  display: flex;
+}
+#about {
+  margin-top: 10rem;
+}
+#about-content {
+  margin-left: 3rem;
+  text-align: justify;
+}
+#about-content h3 {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+}
+#about-content > p {
+  font-size: 1rem;
+  margin: 0.67rem;
+}
+#div-slika-about {
+  margin-top: 1.5rem;
+}
+#div-slika-about > img {
+  height: 20rem;
+  outline: 1px solid darkgrey;
+  outline-offset: 7px;
+}
+#div-korisnik-unos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 60%;
+}
+.all-contact {
+  display: flex;
+}
+.kontakt {
+  padding-left: 2rem;
+}
+.kontakt > h4 {
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 1rem;
+}
+#div-korisnik-unos div {
+  height: auto;
+  margin: 10px 0;
+}
+form {
+  width: 100%;
+  margin-top: 1rem;
+}
+input,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border-radius: 0.5rem;
+  border: 0.1rem solid darkgrey;
+}
+.dugmeKorisnik {
+  width: 30%;
+  color: white;
+  background: darkcyan;
+  border-radius: 0.5rem;
+  border: none;
+
+  padding: 0.7rem 1rem;
+  text-align: center;
+}
+label {
+  display: block;
+  font-weight: 700;
+  color: black;
+  margin-bottom: 0.4rem;
+}
+.brendovi {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  padding-top: 1rem;
+}
+#proizvodi {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+.brendovi > img {
+  flex-direction: row;
+  width: 3rem;
+  display: block;
+}
+#footerMain {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid gray;
+  text-align: justify;
+}
+.info-fot a:hover {
+  background-color: gray;
+  color: white;
+}
+.kontakt p {
+  margin-top: 2.5rem;
+  padding: 1.5rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: start;
+}
+.kontakt p a,
+p a:visited,
+p a:active {
+  color: gray;
+}
+.info-fot p a,
+p a:visited,
+p a:active {
+  color: gray;
+}
+.copy {
+  text-transform: uppercase;
+  text-align: center;
+  color: white;
+  text-align: center;
+  padding-bottom: 20px;
+}
+.copyDiv {
+  background-color: gray;
+  height: auto;
+  margin-top: 1rem;
+  margin-bottom: 0.7rem;
+}
+.foth {
+  color: gray;
+  text-align: center;
+}
+.fab {
+  font-size: 2rem;
+  padding: 0.2rem;
+  color: gray;
+}
+.font-footer {
+  text-align: center;
+  margin-right: 2rem;
+}
+.facebook::after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f09a";
+  display: block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  color: black;
+  font-size: 3rem;
+}
+.instagram::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\e055";
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  color: black;
+  font-size: 3rem;
+}
+.google::after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f0c9";
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  color: black;
+  font-size: 1.8rem;
+  transform: translateX(13rem);
+}
+.proizvod {
+  width: 22%;
+  margin: 1.2%;
+  height: 16rem;
+  position: relative;
+  padding: 1rem;
+  box-shadow: 1px 1px 3px gray;
+}
+.slika-proizvod > img {
+  height: 7rem;
+  margin: 0 auto;
+  display: block;
+}
+.proizvodi-a {
+  font-size: 0.8rem;
+  color: darkcyan;
+  display: block;
+  text-align: center;
+  margin-top: 0.5rem;
+}
+.proizvodi-btn {
+  border: none;
+  display: block;
+  text-transform: uppercase;
+  width: 70%;
+  border-radius: 2rem;
+  background-color: darkcyan;
+  color: white;
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  cursor: pointer;
+}
+
+.proizvodi-a:hover {
+  background-color: gray;
+  color: white;
+}
+.proizvodi-p {
+  text-align: center;
+  color: gray;
+}
+.slider-img {
+  width: 100%;
+}
+
+.pop-prednja,
+.pop-zadnja {
+  height: 16rem;
+  width: 50%;
+}
+.div-pop-velike {
+  display: flex;
+}
+.pop-prednja-mala,
+.pop-zadnja-mala {
+  margin-top: 1rem;
+  width: 24.6%;
+}
+.pop-h1 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 2rem;
+  color: orangered;
+}
+
+.mainPop {
+  display: flex;
+  justify-content: flex-start;
+}
+.pop-info > p {
+  font-size: 1rem;
+  font-weight: bolder;
+  text-transform: uppercase;
+  color: white;
+  margin-bottom: 1rem;
+}
+.pop-info > p::before {
+  width: 72%;
+  position: absolute;
+  height: 0.1rem;
+  background-color: orangered;
+  content: "";
+  transform: translateY(1.3rem);
+}
+#pitanja-odgovori > p {
+  font-size: 1rem;
+  margin: 1rem;
+  text-align: start;
+}
+#pitanja-odgovori > h5 {
+  font-size: 1.2rem;
+  margin: 1rem;
+  text-align: start;
+}
+
+.btn-pop-kupi {
+  height: 3rem;
+  width: 15rem;
+  border: none;
+  border-radius: 4rem;
+  text-transform: uppercase;
+  font-weight: bolder;
+  font-size: 1rem;
+  background-color: orangered;
+  color: white;
+  display: block;
+  margin-left: 10rem;
+  margin-top: 1rem;
+}
+.pop-div-btn {
+  position: relative;
+}
+.btn-pop-x {
+  display: block;
+  width: 6rem;
+  height: 2.3rem;
+  border-radius: 1rem;
+  font-weight: bolder;
+  font-size: 2rem;
+  background-color: orangered;
+  color: white;
+  border: none;
+  margin: 0 93%;
+  transform: translateX(-4rem);
+}
+.pop-div-img {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10rem;
+}
+@keyframes open {
+  from {
+    right: -90%;
+  }
+  to {
+    right: 50%;
+  }
+}
+@keyframes close {
+  from {
+    right: 50%;
+  }
+  to {
+    right: -90%;
+  }
+}
+@keyframes openFront {
+  from {
+    left: -90%;
+  }
+  to {
+    left: 0%;
+  }
+}
+@keyframes closeFront {
+  from {
+    left: 0rem;
+  }
+  to {
+    left: -90%;
+  }
+}
+.open {
+  animation-name: open;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+}
+.close {
+  animation-name: close;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+}
+.openFront {
+  animation-name: openFront;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+}
+.closeFront {
+  animation-name: closeFront;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+}
+.pop-zadnja {
+  position: relative;
+  right: -90rem;
+}
+.pop-prednja {
+  position: relative;
+}
+.popTel {
+  position: fixed;
+  display: block;
+  z-index: 200;
+  height: 50rem;
+  width: 70%;
+  background-color: darkcyan;
+  overflow: hidden;
+  border-radius: 1rem;
+  top: 9%;
+  transform: translateX(5.5%);
+}
+.pop-info {
+  position: relative;
+  background-color: darkcyan;
+  min-width: 50%;
+}
+
+.remove {
+  display: none;
+}
+@keyframes show {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes hide {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+.show {
+  animation-name: show;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+}
+.hide {
+  animation-name: hide;
+  animation-duration: 0.5s;
+  animation-fill-mode: backwards;
+  animation-timing-function: linear;
+}
+#slider {
+  position: relative;
+}
+.img-slider1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+}
+.anim {
+  animation: fede1 4s infinite;
+}
+/* .img-slider2{
+  animation: fede2 10s infinite ;
+}
+.img-slider3{
+  animation: fede3 10s infinite ;
+} */
+@keyframes fede1 {
+  0% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.copy::before {
+  font-family: "Font Awesome 5 Free";
+  font-size: 1.2rem;
+  font-weight: 900;
+  content: "\f1f9";
+  display: block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  transform: translate(-13rem, 1.3rem);
+}
+.formLogInStart {
+  display: block;
+  left: 50%;
+  transform: translate(-35%, -35%);
+  width: 35%;
+  height: auto;
+  top: 50%;
+  position: fixed;
+  background-color: darkcyan;
+  z-index: 300;
+  border-radius: 1.8rem;
+}
+.formLogInStartKorpa {
+  display: flex;
+  flex-direction: column;
+  width: 55%;
+  height: auto;
+  position: fixed;
+  background-color: darkcyan;
+  z-index: 300;
+  border-radius: 1.8rem;
+}
+
+.formLog {
+  display: flex;
+  flex-direction: column;
+  transform: translateY(-15%);
+}
+.flom-slika {
+  margin-top: 2rem;
+  width: 10rem;
+}
+#formLogIn label {
+  text-align: center;
+  color: orangered;
+  font-size: 1.3rem;
+  padding: 0.7rem;
+}
+#inputUsername,
+#inputPassword,
+#inputnName {
+  width: 70%;
+  margin-left: 15%;
+  border-radius: 1rem;
+}
+#formLogIn h2 {
+  text-transform: uppercase;
+  text-align: center;
+  position: absolute;
+  color: white;
+  width: 100%;
+  font-size: 1.7rem;
+  word-spacing: 0.5rem;
+  margin-bottom: 1rem;
+}
+#butLog {
+  text-transform: uppercase;
+  border-radius: 2rem;
+  border: none;
+  height: 2rem;
+  width: 10rem;
+  font-weight: bolder;
+  color: white;
+  background-color: orangered;
+  margin-top: 1rem;
+
+  transform: translate(50%, -65%);
+
+  /* margin-left: 50%; */
+  /* transform: translate(-48%, 90%); */
+}
+.btnLogoClose {
+  position: absolute;
+  right: 0.5rem;
+  top: 2rem;
+  text-transform: uppercase;
+  border-radius: 2rem;
+  border: none;
+  height: 2rem;
+  width: 5rem;
+  font-weight: bolder;
+  color: white;
+  background-color: orangered;
+  /* margin-left: 85%;
+  transform: translateY(-280%); */
+}
+
+.left:before {
+  font-family: "Font Awesome 5 Free";
+  font-size: 4rem;
+  font-weight: 800;
+  content: "\f053";
+  display: block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  color: red;
+}
+.right::after {
+  font-family: "Font Awesome 5 Free";
+  font-size: 4rem;
+  font-weight: 800;
+  content: "\f054";
+  display: block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  color: red;
+}
+.left-right {
+  display: flex;
+  justify-content: space-around;
+  position: absolute;
+  width: 60%;
+  align-items: flex-start;
+  transform: translate(-5rem, 7rem);
+}
+.left-right button {
+  background-color: darkcyan;
+  border: 0;
+}
+.video {
+  display: flex;
+  justify-content: flex-end;
+}
+.video iframe {
+  position: absolute;
+  width: 40%;
+  height: 30%;
+  margin-right: 8rem;
+  transform: translateY(-8rem);
+  border-radius: 1rem;
+}
+.logIN:hover {
+  content: "";
+  display: block;
+  background-color: orangered;
+  cursor: pointer;
+}
+.uspesno-logovanje {
+  display: block;
+  left: 50%;
+  transform: translate(-35%, -35%);
+  width: 35%;
+  height: 20%;
+  top: 50%;
+  position: fixed;
+  background-color: darkcyan;
+  z-index: 400;
+  border-radius: 1.8rem;
+}
+.uspesno-logovanje h2 {
+  text-align: center;
+  padding: 3rem;
+  color: orangered;
+}
+.divGreske {
+  display: block;
+  left: 20%;
+  width: 60%;
+  height: 12%;
+  top: 15%;
+  position: fixed;
+  background-color: darkcyan;
+  overflow: hidden;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bolder;
+}
+
+.div-korpa {
+  width: 7rem;
+  height: 4rem;
+  background-color: aqua;
+}
+.formLabel1,
+.formLabel,
+.formLabel2,
+.labe3Form {
+  display: flex;
+  justify-content: space-between;
+}
+.formLabel1 label,
+.formLabel label,
+.formLabel2 label,
+.labe3Form label {
+  max-height: 1rem;
+  align-self: flex-end;
+}
+.p-tel-netacan {
+  color: red;
+  left: 40%;
+  width: 60%;
+  height: 1rem;
+  align-self: flex-start;
+  position: absolute;
+}
+.uspesnaForma1 {
+  display: flex;
+  position: absolute;
+  justify-content: flex-start;
+  flex-direction: column;
+  width: 50%;
+  height: 50%;
+  background-color: darkcyan;
+  color: white;
+  overflow: hidden;
+}
+.divKorpaStyle {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+  height: auto;
+  background-color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem;
+  flex-direction: column;
+}
+.red {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+}
+.red-slika img {
+  height: 5rem;
+}
+.item {
+  margin: 0.2rem 0.5rem;
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.proizvodi-a {
+  margin: 0;
+}
+.wrapercene {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+  font-weight: bolder;
+  width: 97%;
+}
+
+.wrapercene a:hover {
+  color: black;
+  cursor: pointer;
+  transition: transform 1s, filter 2s ease-in-out;
+  transform: scale(1.2);
+  -webkit-filter: drop-shadow(5px 5px 5px #222);
+  filter: drop-shadow(5px 5px 5px #222);
+}
+.divProizvodi {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  padding: 1rem;
+  margin-right: 3rem;
+}
+.divProizvodi h2 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+.divProizvodi h2:after {
+  display: block;
+  content: "";
+  width: 8rem;
+  height: 4px;
+  background-color: orangered;
+  margin: 0 auto;
+  margin-top: 15px;
+}
+.divProizvodi img {
+  height: 5rem;
+  padding: 0;
+  margin: 0;
+}
+.divProizvodi div {
+  padding: 0;
+  margin: 0;
+}
+.divProizvodi img:hover {
+  transition: transform 1s, filter 2s ease-in-out;
+  transform: scale(1.2);
+  -webkit-filter: drop-shadow(5px 5px 5px #222);
+  filter: drop-shadow(5px 5px 5px #222);
+}
+.divKorpa1 {
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  width: 26%;
+  height: 62px;
+  background: #ececec;
+  margin-right: 0.5rem;
+  border-radius: 6px;
+}
+a.add-to-cart {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  height: 63%;
+  background: orangered;
+  font-size: 15px;
+  letter-spacing: 2px;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  border-radius: 24px;
+  text-decoration: none;
+  text-align: center;
+  transform: translate(5%, 35%);
+}
+
+a.cart {
+  display: flex;
+  justify-content: flex-end;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 10rem;
+  color: darkcyan;
+  background: darkcyan
+    url(http://images.vfl.ru/ii/1484930184/14435803/15757225.png) center
+    no-repeat;
+  background-size: 60%;
+  transform: translate(-15%, 35%);
+}
+
+.spanA2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  justify-self: end;
+  z-index: 200;
+  height: 30px;
+  width: 17%;
+  font-size: 19px;
+  font-weight: bolder;
+  color: #fff;
+  border-radius: 50%;
+  background-color: #ffab00;
+  transform: translate(160%, -19%);
+}
+
+/* KORPA CSS */
+
+body,
+* {
+  font-size: 18px;
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+#main-products {
+  margin: 1rem auto;
+  background-color: darkcyan;
+  padding: 1rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  border-radius: 0.5rem;
+  height: auto;
+  justify-content: space-evenly;
+  z-index: 500;
+}
+.product {
+  width: 100%;
+  margin: 0.5rem auto;
+  padding: 0.5rem;
+  background-color: lightsteelblue;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.item {
+  margin: 0 0.5rem;
+}
+.podaci {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(250, 245, 245, 0.3);
+  width: 80%;
+}
+.remove {
+  padding: 0.6rem 1rem;
+  border-radius: 0.1rem;
+  border: none;
+  background-color: rgb(243, 60, 40);
+  color: white;
+  text-align: center;
+}
+.naslov {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.model {
+  font-size: 0.8rem;
+  color: red;
+  font-weight: 700;
+}
+.cena {
+  color: rgb(255, 250, 187);
+  padding: 10px;
+  background-color: rgba(255, 250, 187, 0.1);
+  border-radius: 0.5;
+}
+span.total {
+  font-weight: bold;
+}
+.close-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 2rem;
+  border-radius: 0.5rem;
+  width: 4rem;
+  background-color: orangered;
+  color: white;
+  font-weight: bold;
+  font-size: 1.5rem;
+  border: 0;
+}
+span.remove-product {
+  padding: 0.6rem 1rem;
+  border-radius: 0.1rem;
+  border: none;
+  background-color: rgb(243, 60, 40);
+  color: white;
+  text-align: center;
+  width: 100px;
+  margin: 0 0.5rem;
+}
+div.buttons {
+  width: 20%;
+  cursor: pointer;
+}
+.items {
+  margin: 0;
+}
+.total,
+.price {
+  color: orangered;
+  font-size: 1.5rem;
+  letter-spacing: 0.3rem;
+  align-self: center;
+  text-align: center;
+}
+.img-korpa122 img {
+  height: 5rem;
+  width: 3rem;
+  display: flex;
+}
+.addToCard {
+  text-transform: uppercase;
+  width: 8rem;
+  height: 2.5rem;
+  border-radius: 0.5rem;
+  background-color: orangered;
+  color: white;
+  text-align: center;
+  border: 0;
+  text-justify: initial;
+  align-self: flex-start;
+  justify-self: flex-start;
+  transform: translateY(-150%);
+}
